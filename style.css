@@ -258,6 +258,78 @@ main{
 
 
 
+
+
+
+
+footer{
+    background: black;
+    padding-top: 80px;
+  }
+.footer-container{
+    background-color: rgba(255, 255, 255, 0.1);
+    
+  }
+
+.footer-content{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.footer-container .top-footer{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 70px;
+}
+.footer-container .fitness{
+    max-width: 450px;
+}
+
+.footer-container .top-footer .fitness .title{
+    color: rgb(230, 83, 60);
+    font-size: 70px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.footer-container .top-footer .sub-title{
+    line-height: 24px;
+}
+
+.footer-container .link .title{
+    color: rgb(255, 255, 255);
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 72px;
+}
+
+
+.footer-container .link .sub-title{
+    margin-bottom: 20px;
+}
+
+.footer-container .sub-title-container .sub-title{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 23px;
+    font-weight: 400;
+}
+
+
+.footer-container .bottom-footer{
+    text-align: center;
+    margin-top: 80px;
+}
+
+.footer-container .bottom-footer .copy-right{
+    padding: 36px 0;
+    border-top: 2px solid rgba(255, 255, 255, 0.1); ;
+    font-weight:400;
+    font-size:20px;
+    color: rgba(255, 255, 255, 0.5);
+
+}
+
+
 @media screen and (max-width:576px) {
 
     
@@ -281,6 +353,7 @@ main{
         flex-direction: column; 
         gap: 30px;
         margin: 60px 20px;
+        padding: 45px;
     
      }
 
@@ -295,4 +368,45 @@ main{
         max-width: 280px;
         object-fit: cover;
      }
+
+     .meet-team .text-part{
+        max-width: 400px;
+     }
+
+
+     .meet-team .meet-team-title{
+        font-size: 32px;
+     }
+
+     .meet-team .img-part{
+        grid-template-columns: repeat(1,1fr);
+     }
+
+     .meet-team{
+        padding: 20px;
+     }
+
+     .meet-team .img-container .text{
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+    }
+
+
+
+    .footer-container .link .title{
+      margin-bottom: 40px;
+    }
+
+    .footer-container{
+        padding: 20px;
+    }
+
+    .footer-container .fitness{
+        margin-bottom: 20px;
+    }
+
+    .footer-container .top-footer {
+        flex-direction: column;
+    }
 }
