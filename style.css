@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap');
+
+
+.inter-font{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* shared style start */
+
+
+.primary-title{
+    color: rgb(255, 255, 255);
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.primary-sub-title{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    font-weight: 400;
+    line-height:20px;
+    letter-spacing: 0.3px;
+}
+
+
+
+/* shared style end */
+
+main{
+    background-color: black;
+}
+
+/* habits section style */
+
+
+.habits-container{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.habits-container .text-part{
+    text-align: center;
+    max-width: 671px;
+    margin: 0 auto;
+    margin-bottom: 45px;
+}
+
+.habits-container .text-part .title{
+    margin-bottom: 12px;
+}
+
+
+.habits-container .img-part{
+    display: flex;
+    justify-content: space-between;
+}
+
+.habits-container .img-part .img-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 270px;
+    gap: 30px;
+}
+
+.habits-container .img-part img{
+    border-radius: 50%;
+    border: 2px solid rgb(71, 69, 69);
+}
+
+.habits-container .img-content .img-title{
+        color: rgb(255, 255, 255);
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 6px;
+}
+
+
+
+/* run section style start */
+
+.run-container{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-top: 100px;
+    border-radius: 18px;
+    background: rgb(34, 34, 34);
+    padding: 80px;
+}
+
+
+
+.run-container .text-part{
+    max-width: 443px;
+    margin: auto 0;
+}
+
+.run-container .text-part .title{
+    margin-bottom: 20px;
+}
+.run-container .text-part .sub-title{
+    margin-bottom: 40px;
+}
+
+.run-container .text-part .btn{
+    background: rgb(230, 83, 60);
+    border: none;
+    border-radius: 42px;
+    width: 224px;
+    height: 54px;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.run-container .img-part img{
+    max-width: 500px;
+    border-radius: 18px;
+    object-fit: none;
+    object-position: 70% 33%;
+}
+
+/* Run section end */
+
+
+/* BMI section start */
+
+.BMI{
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-top: 90px;
+}
+
+.BMI .disc-section{
+    max-width: 671px;
+    margin: 0 auto;
+}
+
+.BMI table{
+    border-collapse: collapse;
+}
+
+.BMI .calc-section .chart-part table th, td {
+    border: 1px solid black;
+   
+}
+
+@media screen and (max-width:576px) {
+
+    
+
+     .habits-container .text-part{
+        max-width: 318px;
+     }
+
+     .habits-container .primary-title{
+        font-size: 32px;
+     }
+
+     .habits-container .img-part{
+        flex-direction: column;
+        align-items: center;
+        gap: 36px;
+     }
+    
+
+     .run-container{
+        flex-direction: column; 
+        gap: 30px;
+        margin: 60px 20px;
+    
+     }
+
+     .run-container .text-part .title{
+        font-size: 32px;
+     }
+
+     .run-container .text-part .btn{
+        width: 280px;
+     }
+     .run-container .img-part img{
+        max-width: 280px;
+        object-fit: cover;
+     }
+}
