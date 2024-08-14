@@ -59,6 +59,14 @@
 /* shared style end */
 
 
+/* header style start */
+
+.header{
+    background-color: rgb(17, 17, 17);
+}
+
+/* nav style start */
+
 .nav .logo .logo-text{
     color: rgb(230, 83, 60);
     font-size: 36px;
@@ -107,6 +115,8 @@
 .nav .menu-bar {
     display: none;
 }
+
+/* banner style start */
 
 .banner .left-part .title{
     color: rgb(255, 255, 255);
@@ -216,22 +226,12 @@
 }
 
 
-.header{
-    /* background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%); */
-    background-color: rgba(0, 0, 0, 0.89);
-}
-
-
-
-
-
 
 main{
     background-color: black;
 }
 
 /* habits section style */
-
 
 .habits-container{
     max-width: 1440px;
@@ -398,6 +398,8 @@ main{
 }
 
 
+/* our-plan style start */
+
 .our-plan{
     margin-top: 80px;
 }
@@ -473,12 +475,7 @@ main{
 
 }
 
-
-
-
-
-
-
+/* meet style start */
 
 .meet-team{
     margin-top: 100px;
@@ -537,12 +534,7 @@ main{
     left: 30px;
 }
 
-
-
-
-
-
-
+/* footer style start */
 footer{
     background: black;
     padding-top: 80px;
@@ -612,13 +604,14 @@ footer{
 
 
 @media screen and (max-width:576px) {
-
+ 
+    /* header style start */
 
     .header{
         padding: 20px;
     }
 
-   
+    /* nav style start */   
     .nav{
         padding-top: 20px;
     }
@@ -630,7 +623,7 @@ footer{
         display: none;
     }
 
-
+    /* banner style start */
     .banner{
         flex-direction: column;
     }
@@ -641,7 +634,6 @@ footer{
     .banner .left-part{
         max-width: 390px;
     }
-
 
     .banner .work-out{
         max-width: 145px;
@@ -659,7 +651,7 @@ footer{
     color: rgb(255, 255, 255);
     font-size: 30.24px;
     font-weight: 900;
-}
+    }
     
     .banner .work-out .sub-title,
     .banner .video-tutorial .sub-title{
@@ -681,6 +673,9 @@ footer{
         height: 30px;
     }
 
+
+    /* habits style start */
+
      .habits-container .text-part{
         max-width: 318px;
      }
@@ -695,15 +690,12 @@ footer{
         gap: 36px;
      }
 
-     
-    
-
+     /* run style start */
      .run-container{
         flex-direction: column; 
         gap: 30px;
         margin: 60px 20px;
         padding: 45px;
-    
      }
 
      .run-container .text-part .title{
@@ -722,7 +714,7 @@ footer{
      }
 
 
-
+    /* BMI style start */
      .BMI .disc-section .title{
         color: rgb(255, 255, 255);
         font-size: 32px;
@@ -742,11 +734,9 @@ footer{
         max-width: 353px;
      }
 
-     
      .BMI .chart-part{
         margin: 0;
         margin-bottom: 60px;
-
      }
 
      .BMI .BMI-Calc-title{
@@ -756,7 +746,7 @@ footer{
      }
 
 
-
+     /* our-plan style start */
      .our-plan .plan{
         grid-template-columns: 1fr;
         padding: 20px;
@@ -771,7 +761,7 @@ footer{
      font-weight: 800;
      }
 
-
+     /* meet style start */
      .meet-team .text-part{
         max-width: 400px;
      }
@@ -796,8 +786,7 @@ footer{
         left: 20px;
     }
 
-
-
+    /* footer style start */
     .footer-container .link .title{
       margin-bottom: 40px;
     }
