@@ -338,7 +338,7 @@ main{
     margin-top: 90px;
     background-color: rgb(34, 34, 34);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 50px 190px;
 }
 
@@ -378,7 +378,6 @@ main{
 
 .BMI .chart-part{
     max-width: 400px;
-    margin-left: 60px;
 }
 
 .BMI .calc-section .chart-part table th, td {
@@ -397,6 +396,87 @@ main{
 .BMI .calc-part{
     max-width: 650px;
 }
+
+
+.our-plan{
+    margin-top: 80px;
+}
+
+
+.our-plan .discription{
+    margin: 0 auto;
+    max-width: 560px;
+    text-align: center;
+}
+
+
+.our-plan .discription h3{
+    font-size: 26px;
+    font-weight: 900;
+    color: rgb(230, 83, 60);
+    margin-bottom: 10px;
+}
+
+
+.our-plan .discription h1{
+    font-size: 42px;
+    font-weight: 900;
+    color: white;
+}
+
+
+.our-plan .options-item{
+    color:rgba(255, 255, 255, 0.5);
+    margin-bottom: 30px;
+}
+
+
+.our-plan .broder{
+    border-top: 1px solid rgba(255, 255, 255);
+    width: 150px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.our-plan .plan h2{
+    font-size: 24px;
+    font-weight: 900;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.our-plan .plan h1{
+    font-size: 48px;
+    font-weight: 900;
+    color: rgb(230, 83, 60);
+    margin-bottom: 10px;
+}
+
+.our-plan .plan{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    gap: 30px;
+    margin: 0 auto;
+    max-width: 1440px;
+    justify-content: space-between;
+    text-align: center;
+   
+}
+
+.item{
+    margin-top: 80px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: rgb(34, 34, 34);
+    border-radius: 8px;
+
+}
+
+
+
+
+
 
 
 
@@ -673,6 +753,22 @@ footer{
         color: rgb(255, 255, 255);
         font-size: 16px;
         font-weight: 900;
+     }
+
+
+
+     .our-plan .plan{
+        grid-template-columns: 1fr;
+        padding: 20px;
+     }
+
+     .our-plan .discription h1{
+        font-size: 32px;
+     }
+
+    .plan .item h1{
+     font-size:26px;
+     font-weight: 800;
      }
 
 
