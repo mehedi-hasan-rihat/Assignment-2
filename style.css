@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Grey+Qo&family=Playwrite+CU:wght@100..400&display=swap');
 
 .inter-font{
   font-family: "Inter", sans-serif;
@@ -10,6 +9,13 @@
   font-variation-settings:
     "slnt" 0;
 }
+
+.grey-qo-regular{
+    font-family: "Grey Qo", cursive;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
 
 *{
     margin: 0;
@@ -37,8 +43,189 @@
 }
 
 
+.cmn-btn{
+    background: rgb(230, 83, 60);
+    border-radius: 42px;
+    width: 280px;
+    height: 54px;
+    
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+}
+
+
 
 /* shared style end */
+
+
+.nav .logo .logo-text{
+    color: rgb(230, 83, 60);
+    font-size: 36px;
+    font-weight: 800;
+}
+
+.nav .menu .list-item{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 600;
+    list-style: none;
+}
+
+.nav .menu-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 48px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 40px;
+    padding: 5px 12px 5px 5px;
+
+}
+
+
+.nav .menu-list .home{
+    padding: 8px 20px;
+    border-radius: 46px;
+    background: rgb(230, 83, 60);
+}
+
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 60px 0 32px 0;
+}
+
+
+.nav .menu-bar .bar{
+    color: rgb(255, 255, 255);
+}
+
+.nav .menu-bar {
+    display: none;
+}
+
+.banner .left-part .title{
+    color: rgb(255, 255, 255);
+    font-size: 78px;
+    font-weight: 900;
+    line-height: 120%;
+    margin-bottom: 28px;
+}
+
+
+.banner .left-part .sub-title{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 28px;
+}
+
+.banner .btn{
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 42px;
+    width: 224px;
+    height: 54px;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 16px;
+}
+
+.banner .btn-group{
+    display: flex;
+}
+
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.banner .left-part{
+    max-width: 600px;
+}
+
+.banner .right-part{
+    position: relative;
+}
+
+.banner .work-out{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    max-width: 200px;
+    padding: 14px 22px;
+    position: absolute;
+    top: 130px;
+    right: -40px;
+    backdrop-filter: blur(20px)
+}
+
+.banner .work-out .title,
+.banner .video-tutorial .title{
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.banner .work-out .sub-title,
+.banner .video-tutorial .sub-title{
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.banner .video-tutorial{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    max-width: 220px;
+    padding: 14px 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 60px;
+    left: -100px;
+    backdrop-filter: blur(20px)
+}
+
+
+.banner .video-tutorial .circule{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(230, 83, 60);
+    border-radius: 50%;
+    position: relative;
+    left: -10px;
+}
+
+.banner .img{
+    max-width: 350px;
+}
+
+.banner img{
+    width: 100%;
+}
+
+
+.header{
+    /* background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%); */
+    background-color: rgba(0, 0, 0, 0.89);
+}
+
+
+
+
+
 
 main{
     background-color: black;
@@ -119,16 +306,7 @@ main{
     margin-bottom: 40px;
 }
 
-.run-container .text-part .btn{
-    background: rgb(230, 83, 60);
-    border: none;
-    border-radius: 42px;
-    width: 224px;
-    height: 54px;
-    color: rgb(255, 255, 255);
-    font-size: 18px;
-    font-weight: 600;
-}
+
 
 .run-container .img-part img{
     max-width: 500px;
@@ -332,7 +510,67 @@ footer{
 
 @media screen and (max-width:576px) {
 
+
+    .header{
+        padding: 20px;
+    }
+
+   
+
+    .nav .menu-bar {
+        display: block;
+    }
+
+    .nav .menu-list{
+        display: none;
+    }
+
+
+    .banner{
+        flex-direction: column;
+    }
+
+    .banner .left-part .title{
+        font-size: 36px;
+    }
+    .banner .left-part{
+        max-width: 390px;
+    }
+
+
+    .banner .work-out{
+        max-width: 145px;
+        right: -10px;
+        top: 60px;
+    }
+
+    .banner .video-tutorial{
+        max-width: 155px;
+        left: 20px;
+    }
+
+    .banner .work-out .title,
+    .banner .video-tutorial .title{
+    color: rgb(255, 255, 255);
+    font-size: 30.24px;
+    font-weight: 900;
+}
     
+    .banner .work-out .sub-title,
+    .banner .video-tutorial .sub-title{
+        color: rgba(255, 255, 255, 0.65);
+        font-size: 9.83px;
+        font-weight: 400;
+    }
+
+    .banner .img{
+        max-width: 300px;
+    }
+
+    .banner .right-part{
+        padding: 20px;
+    }
+
 
      .habits-container .text-part{
         max-width: 318px;
@@ -409,4 +647,6 @@ footer{
     .footer-container .top-footer {
         flex-direction: column;
     }
+
+    
 }
