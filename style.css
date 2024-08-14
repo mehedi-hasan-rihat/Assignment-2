@@ -46,9 +46,8 @@
 .cmn-btn{
     background: rgb(230, 83, 60);
     border-radius: 42px;
-    width: 280px;
+    width: 240px;
     height: 54px;
-    
     color: rgb(255, 255, 255);
     font-size: 18px;
     font-weight: 600;
@@ -244,6 +243,7 @@ main{
     max-width: 671px;
     margin: 0 auto;
     margin-bottom: 45px;
+    padding-top: 100px;
 }
 
 .habits-container .text-part .title{
@@ -321,8 +321,6 @@ main{
 /* BMI section start */
 
 .BMI{
-    max-width: 1440px;
-    margin: 0 auto;
     margin-top: 90px;
 }
 
@@ -338,33 +336,54 @@ main{
 
 .BMI .calc-section{
     margin-top: 90px;
-    background-color: rgb(34, 34, 34);;
+    background-color: rgb(34, 34, 34);
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 190px;
+}
+
+
+.BMI .input-content input,
+.BMI .input-content select,
+.BMI select{
+    padding: 12px 40px 12px 20px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    margin: 5px;
+    width: calc(50% - 13px);
+}
+
+.BMI .activity-selector{
+    width: calc(100% - 12px);
+    margin-bottom: 34px;
 }
 
 .BMI-Calc-title{
     color: rgb(255, 255, 255);
     font-size: 28px;
     font-weight: 900;
+    margin-bottom: 14px;
 }
 
-
-.BMI .calc-section .calc-part .input-part{
-    color: rgba(255, 255, 255, 0.6);
-    font-size: 16px;
-    font-weight: 400;
+.BMI .calc-part .text-part{
+    margin-bottom: 34px;
 }
 
 
 .BMI .chart-part table{
     border-collapse: collapse;
-    max-width: 350px;
     margin-top: 50px;
 }
 
+.BMI .chart-part{
+    max-width: 400px;
+    margin-left: 60px;
+}
 
 .BMI .calc-section .chart-part table th, td {
     border: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 20px 25px;
+    padding: 10px 40px;
     text-align: left;
 }
 
@@ -373,6 +392,10 @@ main{
     color: rgb(255, 255, 255);
     font-size: 16px;
     font-weight: 500;
+}
+
+.BMI .calc-part{
+    max-width: 650px;
 }
 
 
@@ -516,7 +539,9 @@ footer{
     }
 
    
-
+    .nav{
+        padding-top: 20px;
+    }
     .nav .menu-bar {
         display: block;
     }
@@ -571,6 +596,10 @@ footer{
         padding: 20px;
     }
 
+    .banner .video-tutorial .circule{
+        width: 50px;
+        height: 30px;
+    }
 
      .habits-container .text-part{
         max-width: 318px;
@@ -585,6 +614,8 @@ footer{
         align-items: center;
         gap: 36px;
      }
+
+     
     
 
      .run-container{
@@ -599,6 +630,9 @@ footer{
         font-size: 32px;
      }
 
+     .run-btn{
+        width: 280px;
+     }
      .run-container .text-part .btn{
         width: 280px;
      }
@@ -606,6 +640,41 @@ footer{
         max-width: 280px;
         object-fit: cover;
      }
+
+
+
+     .BMI .disc-section .title{
+        color: rgb(255, 255, 255);
+        font-size: 32px;
+        font-weight: 900;
+    }
+     .BMI .calc-section{
+        flex-direction: column;
+        padding: 50px 20px;
+        margin-top: 50px;
+     }
+
+     .BMI .disc-section{
+        padding: 20px;
+     }
+
+     .BMI .disc-section .sub-title{
+        max-width: 353px;
+     }
+
+     
+     .BMI .chart-part{
+        margin: 0;
+        margin-bottom: 60px;
+
+     }
+
+     .BMI .BMI-Calc-title{
+        color: rgb(255, 255, 255);
+        font-size: 16px;
+        font-weight: 900;
+     }
+
 
      .meet-team .text-part{
         max-width: 400px;
@@ -622,6 +691,7 @@ footer{
 
      .meet-team{
         padding: 20px;
+        margin-top: 50px;
      }
 
      .meet-team .img-container .text{

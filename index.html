@@ -117,7 +117,7 @@
             <div class="text-part">
                 <h1 class="title primary-title">Run an Extra <br> Mile Easily</h1>
                 <p class="sub-title primary-sub-title"> We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. With hundreds of professional workouts.</p>
-                <button class="cmn-btn">Join Now</button>
+                <button class="cmn-btn run-btn">Join Now</button>
             </div>
             <div class="img-part">
                 <img src="./images/run.jpg" alt="">
@@ -174,23 +174,26 @@
                 </div>
 
                 <div class="input-part">
-                    <input type="number" id="Height" placeholder="Height/cm">
-
-                    <input type="number" id="Weight" placeholder="Weight/kg">
+                    <div class="input-content">
+                        <input type="number" class="primary-sub-title" placeholder="Height/cm">
+                        <input type="number" class="primary-sub-title" placeholder="Weight/kg">
+                    </div>
+                    <div class="input-content">
+                        <input type="number" class="primary-sub-title" placeholder="Age">
+                        <select class="primary-sub-title">
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
                     
-                    <input type="number" id="Age" placeholder="Age">
-
-                    <select id="Sex">
-                        <option value="Male">Male</option>
-                        <option value="Female">Female</option>
-                        <option value="Other">Other</option>
-                    </select>
-                    
-                    <select id="Activity">
+                    <select class="primary-sub-title activity-selector">
                         <option>Select an activity factor</option>
                     </select>
 
-                    <button class="btn">Calculate</button>
+                    <br>
+
+                    <button class="btn cmn-btn">Calculate</button>
 
                 </div>
             </div>
