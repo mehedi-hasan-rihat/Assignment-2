@@ -23,9 +23,7 @@
     box-sizing: border-box;
 }
 
-
 /* shared style start */
-
 
 .primary-title{
     color: rgb(255, 255, 255);
@@ -42,7 +40,6 @@
     letter-spacing: 0.3px;
 }
 
-
 .cmn-btn{
     background: rgb(230, 83, 60);
     border-radius: 42px;
@@ -53,8 +50,6 @@
     font-weight: 600;
     border: none;
 }
-
-
 
 /* shared style end */
 
